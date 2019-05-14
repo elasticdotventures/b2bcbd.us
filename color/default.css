@@ -6,6 +6,16 @@ a,.tp-caption a.btn:hover {
 	background: #67b0d1;
 }
 
+@media (max-width: 768px) {
+  .navbar, .navbar-nav {
+		background: #67b0d1 !important;
+	}
+
+	.navbar-nav a {
+		color: #fff !important;
+	}
+}
+
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
 	color: #67b0d1;
 }
