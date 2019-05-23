@@ -9,6 +9,13 @@ updating this repo DOES NOT currently automatically update the website; you need
 it on the aws bucket.  
 
 
+xray ??
+the $.ajax library is provided by jquery
+
+
+https://docs.aws.amazon.com/xray/latest/devguide/xray-services-lambda.html
+
+
 ----
 Credit
 
