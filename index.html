@@ -524,39 +524,9 @@
 
           e.preventDefault();
           // this.name, this.email, this.subject, this.message 
-          var body = JSON.stringify({ name: this.name, email: this.email, subject: this.subject, message: this.message });
+          var body = JSON.stringify({ name: this.name, email: this.email, message: this.message });
 
           this.isSubmitted = true;
-
-          //        alert(body);
-
-          /*         $.post(
-                    'https://0sdtjcuryj.execute-api.us-east-1.amazonaws.com/dev/email/send',
-                    body).then(function(){
-                      alert('thank you!');
-                    })
-          
-          
-                    curl --header "Content-Type: application/json" \
-          >   --request POST \
-          >   --data '{"email":"john.doe@email.com","name":"John Doe","content":"Hey! testing the email form"}' \
-          >   
-          
-                      <div class="show" id="sendmessage">Your message has been sent. Thank you!</div>
-                    $("#sendmessage").addClass("show");
-                    $("#errormessage").removeClass("show");
-                    $('.contactForm').find("input, textarea").val("");
-                  } else {
-                    $("#sendmessage").removeClass("show");
-                    $("#errormessage").addClass("show");
-                    $('#errormessage').html(msg);
-          
-           */
-          //     $.post($form.attr("action"), $form.serialize()).then(function() {
-          //      alert("Thank you!");
-          //   });
-
-          //   $('#form-response').html('<h1>test</h1>');
 
           $.ajax({
             type: "POST",
@@ -565,16 +535,20 @@
             data: JSON.stringify({
               'name': this.name,
               'email': this.email,
+              'subject': this.subject, 
               'content': this.message
             }),
             success: function (res) {
-              $('#form-response').html('<div class="alert alert-info" role="alert">Welcome to the queue! Your path will begin shortly...</div>');
+              this.isSubmitted = true;
             },
 
-            error: function () { $('#form-response').html('<div class="alert alert-info" role="alert">Something went wrong... We are working on it!</div>'); }
+            error: function () { 
+              alert('an error has occurred!');
+              this.isSubmitted = false;
+            }
+
           });
 
-          this.isSubmitted = true;
 
         },
         // validate by type and value
