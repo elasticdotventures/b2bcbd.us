@@ -47,3 +47,6 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
+## Google Analytics
+
+event 'button' 'click' $id_of_button value
