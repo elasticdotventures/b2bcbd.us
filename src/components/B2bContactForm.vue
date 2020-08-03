@@ -97,9 +97,10 @@
               <address>
                 <strong>B2BCBD.us</strong><br>
                 c/o <a href="http://elastic.ventures">Elastic.Ventures</a><br>
+            
                 30661 Valley Center Rd. #B<br>
                 San Diego, CA. 92082<br>
-                <abbr title="Phone">P:</abbr> +1 929-515-6544
+                <abbr title="Phone">P:</abbr> +1 347-708-3850
               </address>
 
               <address>
@@ -111,10 +112,12 @@
                 <ul class="company-social">
                   <li class="social-facebook"><a href="http://fb.com/b2bcbd.us" target="_blank"><i
                         class="fa fa-facebook"></i></a></li>
-                  <li class="social-instagram"><a href="https://www.instagram.com/explore/tags/elasticadventures"
+                  <li class="social-instagram"><a href="http://linkedin.com/company/elasticdotventures"
                       target="_blank"><i class="fa fa-instagram-plus"></i></a></li>
+                  <li class="social-twitter">
+                      <a href="https://twitter.com/BrianHorakh" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  
                   <!--
-                                <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                 <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
                                 <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                   -->
